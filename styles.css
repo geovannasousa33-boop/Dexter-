@@ -1,99 +1,60 @@
-:root{
-  --red-dark: #8b0000;
-  --red-mid: #b30000;
-  --red-light: #ff4d4d;
-  --white: #ffffff;
+/* Estilos principais do site Dexter */
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to bottom, #ffffff, #ff0000);
+    color: #200000;
 }
 
-body{
-  margin:0;
-  background: linear-gradient(135deg, var(--red-dark), var(--red-mid), var(--red-light), var(--white));
-  font-family: Arial, Helvetica, sans-serif;
-  color:#fff;
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(to right, #ff0000, #ffffff);
+    color: white;
 }
 
-.container{max-width:1000px;margin:auto;padding:30px}
-
-.site-header{text-align:center;padding:40px 0}
-.title{font-size:48px;margin-bottom:5px}
-.subtitle{opacity:0.9;margin-bottom:15px}
-
-.nav a{
-  color:white;
-  margin:0 10px;
-  text-decoration:none;
-  font-weight:bold;
+header h1 {
+    font-size: 48px;
+    margin: 0;
 }
 
-.panel{padding:50px 0;background:rgba(255,255,255,0.05)}
-.panel.alt{background:rgba(0,0,0,0.15)}
-
-h2{margin-bottom:15px}
-
-.lead{max-width:800px;line-height:1.6}
-
-.btn{
-  margin-top:10px;
-  background:white;
-  color:var(--red-dark);
-  border:none;
-  padding:10px 16px;
-  border-radius:8px;
-  cursor:pointer;
-  font-weight:bold;
+header p {
+    font-size: 18px;
+    margin-top: 10px;
 }
 
-.btn.outline{
-  background:transparent;
-  border:2px solid white;
-  color:white;
+.sobre, .personagens {
+    padding: 40px 20px;
+    background: rgba(255, 255, 255, 0.7);
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #7a0000;
 }
 
-.hidden{display:none}
-
-.cards{
-  list-style:none;
-  padding:0;
-  display:flex;
-  gap:15px;
-  flex-wrap:wrap;
+.personagens h2, .sobre h2 {
+    text-align: center;
+    color: #7a0000;
 }
 
-.card{
-  background:rgba(255,255,255,0.12);
-  padding:18px;
-  border-radius:10px;
-  min-width:160px;
-  box-shadow:0 4px 10px rgba(0,0,0,0.25);
+.card {
+    background: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-left: 6px solid #ff0000;
+    border-radius: 6px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
 }
 
-.gallery{
-  display:flex;
-  gap:15px;
+.card h3 {
+    color: #b30000;
 }
 
-.thumb{
-  flex:1;
-  background:linear-gradient(135deg, rgba(179,0,0,0.6), rgba(255,255,255,0.1));
-  padding:40px 0;
-  text-align:center;
-  border-radius:10px;
-  font-weight:bold;
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #b30000;
+    color: white;
+    margin-top: 40px;
 }
-
-.highlight{
-  animation:pulse 1.4s ease-in-out 3;
-}
-
-@keyframes pulse{
-  0%{box-shadow:0 0 0 rgba(255,255,255,0);}
-  50%{box-shadow:0 0 25px 5px rgba(255,255,255,0.25);}
-  100%{box-shadow:0 0 0 rgba(255,255,255,0);}
-}
-
-.site-footer{
-  text-align:center;
-  padding:20px;
-  opacity:0.8;
-}
-
