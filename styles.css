@@ -1,0 +1,78 @@
+/* Resetando alguns estilos básicos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo e fundo */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #4A2C2A; /* Camurça escuro */
+  color: white;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #8B0000; /* Vermelho sangue */
+  padding: 20px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+/* Seção de descrição */
+#description {
+  background-color: #6B2F2A; /* Camurça */
+  padding: 20px;
+  margin-top: 20px;
+  width: 80%;
+  border-radius: 8px;
+  display: none; /* Começa escondida */
+}
+
+h2 {
+  color: #8B0000; /* Vermelho sangue */
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+#button-section {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  background-color: #8B0000; /* Vermelho sangue */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #7F0000; /* Vermelho sangue mais escuro */
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 1rem;
+  color: #bbb;
+}
