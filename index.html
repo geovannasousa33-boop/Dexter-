@@ -1,55 +1,269 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dexter - O Justiceiro</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dexter — Sombras e Códigos</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Dexter Morgan</h1>
-        <p>O serial killer que caça quem escapou da justiça.</p>
+  <div class="page-wrap">
+
+    <header class="site-header">
+      <div class="head-inner">
+        <h1 class="site-title">Dexter</h1>
+        <p class="site-tag">Sombras e Códigos — a história da série e seus personagens</p>
+        <nav class="main-nav">
+          <a href="#history">História</a>
+          <a href="#characters">Personagens</a>
+          <a href="#villains">Vilões</a>
+          <a href="#gallery">Galeria</a>
+          <a href="#contact">Apresentação</a>
+        </nav>
+      </div>
     </header>
 
-    <section class="sobre">
-        <h2>Sobre a Série</h2>
-        <p><strong>Dexter</strong> acompanha um perito forense especializado em sangue que leva uma vida dupla: de dia, trabalha na polícia de Miami ajudando a solucionar crimes; à noite, caça assassinos que nunca foram pegos.</p>
-    </section>
-
-    <section class="personagens">
-        <h2>Personagens Principais</h2>
-
-        <div class="card">
-            <h3>Dexter Morgan</h3>
-            <p>Protagonista. Perito forense e assassino que segue um código moral.</p>
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-inner">
+          <h2>Entre a lei e o código</h2>
+          <p>Dexter Morgan: perito forense à luz do dia, justiceiro nas sombras. Uma série que discute moral, identidade e a fronteira entre justiça e vingança.</p>
+          <div class="hero-cta">
+            <a href="#history" class="btn">Conheça a história</a>
+            <a href="#characters" class="btn ghost">Ver personagens</a>
+          </div>
         </div>
+      </section>
 
-        <div class="card">
-            <h3>Debra Morgan</h3>
-            <p>Irmã de Dexter e policial determinada.</p>
+      <!-- HISTORY -->
+      <section id="history" class="panel">
+        <div class="container">
+          <h2>História da Série</h2>
+          <p class="lead">Baseada nos livros de Jeff Lindsay, a série "Dexter" estreou em 2006 e acompanha a vida dupla de Dexter Morgan, um analista especializado em padrões de sangue no Departamento de Polícia de Miami que, secretamente, mata assassinos que escaparam da justiça. Ao longo das temporadas, a narrativa explora temas como culpa, família, identidade e justiça. Aqui está um resumo amplo:</p>
+
+          <article class="story-block">
+            <h3>Origens e premissa</h3>
+            <p>Dexter tem traços de sociopatia, mas foi treinado por seu pai adotivo, Harry, para controlar seus impulsos e canalizá-los contra criminosos que o sistema não puniu. Esse "Código de Harry" é o eixo moral fictício que o personagem segue.</p>
+          </article>
+
+          <article class="story-block">
+            <h3>Desenvolvimento ao longo das temporadas</h3>
+            <p>A série cresce de um formato procedural (casos semanais) para arcos mais longos e complexos, com a vida pessoal de Dexter se entrelaçando com suas ações. A relação com Debra (sua irmã), Rita (seu relacionamento), e os colegas de polícia dão textura humana ao personagem.</p>
+          </article>
+
+          <article class="story-block">
+            <h3>Recepção e legado</h3>
+            <p>Dexter ganhou fãs e críticas: elogiada por sua originalidade e atuação de Michael C. Hall, mas também questionada por normalizar violência. Independentemente disso, tornou-se uma série culturalmente relevante que instigou debates sobre vigilância e justiça privada.</p>
+          </article>
         </div>
+      </section>
 
-        <div class="card">
-            <h3>Harrison Morgan</h3>
-            <p>Filho de Dexter, importante na reta final da série.</p>
+      <!-- CHARACTERS -->
+      <section id="characters" class="panel alt">
+        <div class="container">
+          <h2>Personagens & Histórias</h2>
+          <p class="lead">Abaixo estão os personagens centrais. Clique em cada cartão para abrir uma modal com mais informações e ver a foto do personagem.</p>
+
+          <div class="grid chars-grid">
+            <!-- Card 1 -->
+            <article class="char-card" data-name="dexter" tabindex="0">
+              <img src="images/dexter.jpg" alt="Dexter (personagem)" class="char-photo">
+              <h3>Dexter Morgan</h3>
+              <p class="short">Analista forense / Vigilante. Segue o 'Código de Harry'.</p>
+              <button class="more-btn" data-target="modal-dexter">Ver mais</button>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="char-card" data-name="debra" tabindex="0">
+              <img src="images/debra.jpg" alt="Debra Morgan" class="char-photo">
+              <h3>Debra Morgan</h3>
+              <p class="short">Irmã de Dexter. Policial dedicada e conflituosa.</p>
+              <button class="more-btn" data-target="modal-debra">Ver mais</button>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="char-card" data-name="harry" tabindex="0">
+              <img src="images/harry.jpg" alt="Harry Morgan" class="char-photo">
+              <h3>Harry Morgan</h3>
+              <p class="short">Pai adotivo. Criador do Código.</p>
+              <button class="more-btn" data-target="modal-harry">Ver mais</button>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="char-card" data-name="rita" tabindex="0">
+              <img src="images/rita.jpg" alt="Rita Bennett" class="char-photo">
+              <h3>Rita Bennett</h3>
+              <p class="short">Parceira/Esposa de Dexter — símbolo de normalidade.</p>
+              <button class="more-btn" data-target="modal-rita">Ver mais</button>
+            </article>
+
+            <!-- Card 5 -->
+            <article class="char-card" data-name="batista" tabindex="0">
+              <img src="images/batista.jpg" alt="Angel Batista" class="char-photo">
+              <h3>Angel Batista</h3>
+              <p class="short">Sargento e amigo de confiança.</p>
+              <button class="more-btn" data-target="modal-batista">Ver mais</button>
+            </article>
+
+            <!-- Card 6 -->
+            <article class="char-card" data-name="masuka" tabindex="0">
+              <img src="images/masuka.jpg" alt="Vince Masuka" class="char-photo">
+              <h3>Vince Masuka</h3>
+              <p class="short">Perito forense com humor ácido.</p>
+              <button class="more-btn" data-target="modal-masuka">Ver mais</button>
+            </article>
+          </div>
+
+          <!-- Hidden modals for each character -->
+          <div id="modal-dexter" class="modal hidden" role="dialog" aria-hidden="true">
+            <div class="modal-inner">
+              <button class="modal-close" data-close>×</button>
+              <h3>Dexter Morgan</h3>
+              <img src="images/dexter.jpg" alt="Dexter" class="modal-photo">
+              <p><strong>Biografia:</strong> Dexter trabalha como analista forense especializado em padrões de sangue no Miami Metro. Traumatizado ao perder sua mãe, foi educado por Harry para controlar seus impulsos através de um código que o permite agir como juiz e executor contra assassinos que escaparam da justiça.</p>
+              <p><strong>Conflitos:</strong> Moralidade, necessidade de conexão humana, riscos de exposição e os laços com sua irmã Debra.</p>
+              <p><strong>Curiosidade:</strong> Seu monólogo interno é um recurso narrativo central que revela sua psicologia.</p>
+            </div>
+          </div>
+
+          <div id="modal-debra" class="modal hidden" role="dialog" aria-hidden="true">
+            <div class="modal-inner">
+              <button class="modal-close" data-close>×</button>
+              <h3>Debra Morgan</h3>
+              <img src="images/debra.jpg" alt="Debra" class="modal-photo">
+              <p><strong>Biografia:</strong> Irmã adotiva de Dexter, Debra é uma policial com um forte senso de justiça que frequentemente entra em conflito emocional por causa de sua relação com Dexter.</p>
+              <p><strong>Conflitos:</strong> Comprometimento com o trabalho, relações pessoais e, posteriormente, dilemas éticos ao descobrir segredos familiares.</p>
+            </div>
+          </div>
+
+          <div id="modal-harry" class="modal hidden" role="dialog" aria-hidden="true">
+            <div class="modal-inner">
+              <button class="modal-close" data-close>×</button>
+              <h3>Harry Morgan</h3>
+              <img src="images/harry.jpg" alt="Harry" class="modal-photo">
+              <p><strong>Biografia:</strong> Ex-policial e pai adotivo de Dexter. Harry ensinou a Dexter o "Código" para que ele pudesse canalizar seus impulsos de matar sem ser pego e, em teoria, apenas contra alvos merecedores.</p>
+              <p><strong>Legado:</strong> Mesmo após sua morte, o Código de Harry guia muitas decisões de Dexter.</p>
+            </div>
+          </div>
+
+          <div id="modal-rita" class="modal hidden" role="dialog" aria-hidden="true">
+            <div class="modal-inner">
+              <button class="modal-close" data-close>×</button>
+              <h3>Rita Bennett</h3>
+              <img src="images/rita.jpg" alt="Rita" class="modal-photo">
+              <p><strong>Biografia:</strong> Interesse amoroso de Dexter, simboliza a possibilidade de uma vida 'normal'. Sua presença influencia a transformação de Dexter em termos emocionais.</p>
+            </div>
+          </div>
+
+          <div id="modal-batista" class="modal hidden" role="dialog" aria-hidden="true">
+            <div class="modal-inner">
+              <button class="modal-close" data-close>×</button>
+              <h3>Angel Batista</h3>
+              <img src="images/batista.jpg" alt="Batista" class="modal-photo">
+              <p>Um dos colegas de trabalho mais leais de Dexter; age como uma âncora moral e prática na equipe.</p>
+            </div>
+          </div>
+
+          <div id="modal-masuka" class="modal hidden" role="dialog" aria-hidden="true">
+            <div class="modal-inner">
+              <button class="modal-close" data-close>×</button>
+              <h3>Vince Masuka</h3>
+              <img src="images/masuka.jpg" alt="Masuka" class="modal-photo">
+              <p>Perito forense que mistura humor e expertise técnica, contribuindo com momentos de leveza.</p>
+            </div>
+          </div>
+
         </div>
+      </section>
 
-        <div class="card">
-            <h3>Angel Batista</h3>
-            <p>Sargento da polícia de Miami, amigo próximo de Dexter.</p>
+      <!-- VILLAINS -->
+      <section id="villains" class="panel">
+        <div class="container">
+          <h2>Vilões e suas histórias</h2>
+          <p class="lead">Ao longo das temporadas, Dexter enfrenta antagonistas memoráveis — quiçá tão complexos quanto o próprio protagonista.</p>
+
+          <div class="villains-grid">
+            <article class="villain-card">
+              <h3>Trinity (Arthur Mitchell)</h3>
+              <p>Um dos antagonistas mais marcantes: serial killer com vida dupla e família, que desafia Dexter em escala e complexidade. Sua revelação abalou muitas certezas sobre a natureza do mal.</p>
+            </article>
+
+            <article class="villain-card">
+              <h3>Brian Moser (Ice Truck Killer)</h3>
+              <p>Também conhecido como Ice Truck Killer, Brian é uma figura com ligação direta ao passado de Dexter, com impacto emocional profundo.</p>
+            </article>
+
+            <article class="villain-card">
+              <h3>Rudy Cooper / Sgt. James Doakes (antagonismo interno)</h3>
+              <p>Doakes é um antagonista direto dentro do departamento, cuja desconfiança em relação a Dexter cria tensão constante.</p>
+            </article>
+
+            <article class="villain-card">
+              <h3>Nick e outros vilões episódicos</h3>
+              <p>Além dos vilões principais, a série cria numerosos criminosos que testam o Código e o julgamento de Dexter.</p>
+            </article>
+          </div>
+
+          <h4>História dos vilões (resumo)</h4>
+          <p class="story-villains">Cada vilão reflete um aspecto diferente da série: violência ritualizada, duplo padrão social, manipulação afetiva e traços do passado de Dexter. Historicamente, os melhores antagonistas não apenas desafiam a habilidade técnica de Dexter, mas também o confrontam moralmente.</p>
         </div>
+      </section>
 
-        <div class="card">
-            <h3>James Doakes</h3>
-            <p>Sargento desconfiado que acredita que há algo errado com Dexter.</p>
+      <!-- GALLERY -->
+      <section id="gallery" class="panel alt">
+        <div class="container">
+          <h2>Galeria (placeholders)</h2>
+          <p class="lead">Substitua as imagens em /images por fotos oficiais ou ilustrações que você desejar usar na apresentação.</p>
+
+          <div class="gallery-grid">
+            <figure class="gallery-item">
+              <img src="images/dexter.jpg" alt="Dexter" />
+              <figcaption>Dexter Morgan</figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <img src="images/debra.jpg" alt="Debra" />
+              <figcaption>Debra Morgan</figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <img src="images/trinity.jpg" alt="Trinity" />
+              <figcaption>Trinity (vilão)</figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <img src="images/ice_truck.jpg" alt="Ice Truck Killer" />
+              <figcaption>Ice Truck Killer</figcaption>
+            </figure>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <footer>
-        <p>Site criado para apresentação — Tema: Dexter.</p>
+      <!-- CONTACT / APRESENTAÇÃO -->
+      <section id="contact" class="panel">
+        <div class="container">
+          <h2>Apresentação</h2>
+          <p class="lead">Este site está pronto para apresentação. Use a navegação superior para ir rapidamente às seções. Dicas para apresentação:</p>
+          <ul class="tips">
+            <li>Abra este site localmente ou publique via GitHub Pages.</li>
+            <li>Use o botão de cada personagem para abrir a modal com informações detalhadas.</li>
+            <li>Substitua as imagens por fotos oficiais na pasta /images para melhorar o visual.</li>
+          </ul>
+
+          <div class="presentation-actions">
+            <button id="highlight-villain" class="btn">Destacar Trinity</button>
+            <button id="open-first" class="btn ghost">Abrir Dexter</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>Site de apresentação — conteúdo baseado na série fictícia "Dexter". Este material é informativo e de caráter cultural.</small>
+      </div>
     </footer>
 
-    <script src="script.js"></script>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
